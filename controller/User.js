@@ -286,13 +286,13 @@ sendActivationCode: async (req, res) => {
         </table>
       </body>
     `;
-    /*const transporter = nodemailer.createTransport({
+    const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: process.env.SENDER_EMAIL,
         pass: process.env.PASSWORD_EMAIL
       },
-    });*/
+    });
     transporter.sendMail({
       from: process.env.SENDER_EMAIL,
       to: req.body.email,
