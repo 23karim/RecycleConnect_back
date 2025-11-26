@@ -1,5 +1,5 @@
 
-/*import User from "../model/User.js";
+import User from "../model/User.js";
 import crypto from 'crypto';
 import nodemailer from 'nodemailer';
 import bcrypt from 'bcrypt';
@@ -368,7 +368,6 @@ changePassword: async (req, res) => {
 };
 export default UserController ;
 
-*/
 
 
 
